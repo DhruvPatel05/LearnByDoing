@@ -19,23 +19,28 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo-swift-outlined" translatesAutoresizingMaskIntoConstraints="NO" id="oyc-vO-eSY">
-                                <rect key="frame" x="92" y="370" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Learn By Doing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPf-nl-gUy">
-                                <rect key="frame" x="101" y="529" width="222" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="36"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="8vK-UK-6DV">
+                                <rect key="frame" x="85.666666666666671" y="348.66666666666669" width="221.66666666666663" height="155"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-swift-outlined" translatesAutoresizingMaskIntoConstraints="NO" id="oyc-vO-eSY">
+                                        <rect key="frame" x="0.0" y="0.0" width="221.66666666666666" height="100"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn By Doing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPf-nl-gUy">
+                                        <rect key="frame" x="0.0" y="112" width="221.66666666666666" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="36"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="U0G-DJ-gx6" secondAttribute="bottom" id="POl-7n-93U"/>
+                            <constraint firstItem="8vK-UK-6DV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="RVk-YU-8i4"/>
                             <constraint firstItem="U0G-DJ-gx6" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="alM-1V-Nlp"/>
+                            <constraint firstItem="8vK-UK-6DV" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="mMl-Yl-jYi"/>
                             <constraint firstAttribute="trailing" secondItem="U0G-DJ-gx6" secondAttribute="trailing" id="pjC-W1-Fyo"/>
                             <constraint firstItem="U0G-DJ-gx6" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="rIM-76-jMU"/>
                         </constraints>
