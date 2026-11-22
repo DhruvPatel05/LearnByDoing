@@ -13,7 +13,13 @@ struct CardView: View {
     // MARK: - BODY
     var body: some View {
         ZStack{
-            Text("CARD")
+            Image("developer-no1")
+            
+            VStack {
+                Text("SwiftUI")
+                Text("Better apps. Less code.")
+                
+            }
         }
         .frame(width: 335,height:545)
         .background(LinearGradient(gradient: Gradient(colors: gradient), startPoint: .top, endPoint: .bottom))
