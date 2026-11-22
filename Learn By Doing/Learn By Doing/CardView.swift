@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct CardView: View {
-    
+    // MARK: - PROPERTIES
+    var gradient: [Color] = [Color("Color01"),Color("Color02")]
     // MARK: - BODY
     var body: some View {
         ZStack{
             Text("CARD")
         }
         .frame(width: 335,height:545)
-        .background(Color.pink)
+        .background(LinearGradient(gradient: Gradient(colors: gradient), startPoint: .top, endPoint: .bottom))
         .cornerRadius(16)
         .shadow(radius:8)
     }
