@@ -17,9 +17,16 @@ struct CardView: View {
             
             VStack {
                 Text("SwiftUI")
+                    .font(.largeTitle)
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.center)
                 Text("Better apps. Less code.")
-                
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                    .italic()
             }
+            .offset(y:-218)
         }
         .frame(width: 335,height:545)
         .background(LinearGradient(gradient: Gradient(colors: gradient), startPoint: .top, endPoint: .bottom))
