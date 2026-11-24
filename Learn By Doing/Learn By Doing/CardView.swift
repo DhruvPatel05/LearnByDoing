@@ -30,10 +30,17 @@ struct CardView: View {
             Button(action: {
                 print("Button was tapped.")
             }) {
-                Text("Learn")
-                    .fontWeight(.heavy)
-                    .foregroundColor(Color.white)
-                    .accentColor(Color.white)
+                HStack {
+                    Text("Learn".uppercased())
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color.white)
+                        .accentColor(Color.white)
+                    Image(systemName: "arrow.right.circle")
+                        .font(Font.title.weight(.medium))
+                        .accentColor(Color.white)
+                }
+                .padding()
+                .background(LinearGradient(gradient: Gradient(colors: gradient), startPoint: .leading, endPoint: .trailing))
             }
         }
         .frame(width: 335,height:545)
