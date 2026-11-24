@@ -27,6 +27,14 @@ struct CardView: View {
                     .italic()
             }
             .offset(y:-218)
+            Button(action: {
+                print("Button was tapped.")
+            }) {
+                Text("Learn")
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color.white)
+                    .accentColor(Color.white)
+            }
         }
         .frame(width: 335,height:545)
         .background(LinearGradient(gradient: Gradient(colors: gradient), startPoint: .top, endPoint: .bottom))
