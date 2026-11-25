@@ -39,8 +39,11 @@ struct CardView: View {
                         .font(Font.title.weight(.medium))
                         .accentColor(Color.white)
                 }
-                .padding()
+                .padding(.vertical)
+                .padding(.horizontal,24)
                 .background(LinearGradient(gradient: Gradient(colors: gradient), startPoint: .leading, endPoint: .trailing))
+                .clipShape(Capsule())
+                .shadow(color: Color("ColorShadow"),radius: 6,x:0,y:3)
             }
         }
         .frame(width: 335,height:545)
