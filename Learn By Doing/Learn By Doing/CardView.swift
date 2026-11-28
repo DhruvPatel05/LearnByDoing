@@ -10,11 +10,10 @@ import SwiftUI
 struct CardView: View {
     // MARK: - PROPERTIES
     var card:Card
-    var gradient: [Color] = [Color("Color01"),Color("Color02")]
     // MARK: - BODY
     var body: some View {
         ZStack{
-            Image("developer-no1")
+            Image(card.imageName)
             
             VStack {
                 Text(card.title)
